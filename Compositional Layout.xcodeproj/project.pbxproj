@@ -11,6 +11,14 @@
 		AADF45DB29AA3FE400849A80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF45DA29AA3FE400849A80 /* ContentView.swift */; };
 		AADF45DD29AA3FE700849A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AADF45DC29AA3FE700849A80 /* Assets.xcassets */; };
 		AADF45E029AA3FE700849A80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AADF45DF29AA3FE700849A80 /* Preview Assets.xcassets */; };
+		AADF45E829AA465000849A80 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = AADF45E729AA465000849A80 /* SDWebImageSwiftUI */; };
+		AADF45ED29AA466D00849A80 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF45EC29AA466D00849A80 /* Home.swift */; };
+		AADF45F029AA46A900849A80 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF45EF29AA46A900849A80 /* Card.swift */; };
+		AADF45F229AA46ED00849A80 /* JSONViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF45F129AA46ED00849A80 /* JSONViewModel.swift */; };
+		AADF45F529AA493800849A80 /* Layout1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF45F429AA493800849A80 /* Layout1.swift */; };
+		AADF45F729AA4AF700849A80 /* Layout2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF45F629AA4AF700849A80 /* Layout2.swift */; };
+		AADF45F929AA4BB100849A80 /* Layout3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF45F829AA4BB100849A80 /* Layout3.swift */; };
+		AADF45FC29AA54AC00849A80 /* ContextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF45FB29AA54AC00849A80 /* ContextModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,13 @@
 		AADF45DA29AA3FE400849A80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AADF45DC29AA3FE700849A80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AADF45DF29AA3FE700849A80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AADF45EC29AA466D00849A80 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		AADF45EF29AA46A900849A80 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		AADF45F129AA46ED00849A80 /* JSONViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONViewModel.swift; sourceTree = "<group>"; };
+		AADF45F429AA493800849A80 /* Layout1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout1.swift; sourceTree = "<group>"; };
+		AADF45F629AA4AF700849A80 /* Layout2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout2.swift; sourceTree = "<group>"; };
+		AADF45F829AA4BB100849A80 /* Layout3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout3.swift; sourceTree = "<group>"; };
+		AADF45FB29AA54AC00849A80 /* ContextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AADF45E829AA465000849A80 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +67,9 @@
 		AADF45D729AA3FE400849A80 /* Compositional Layout */ = {
 			isa = PBXGroup;
 			children = (
+				AADF45EB29AA466000849A80 /* ViewModel */,
+				AADF45EA29AA465900849A80 /* Model */,
+				AADF45E929AA465600849A80 /* View */,
 				AADF45D829AA3FE400849A80 /* Compositional_LayoutApp.swift */,
 				AADF45DA29AA3FE400849A80 /* ContentView.swift */,
 				AADF45DC29AA3FE700849A80 /* Assets.xcassets */,
@@ -65,6 +84,50 @@
 				AADF45DF29AA3FE700849A80 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AADF45E929AA465600849A80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AADF45FA29AA549B00849A80 /* Modifiers */,
+				AADF45F329AA492600849A80 /* Compositional Groups */,
+				AADF45EC29AA466D00849A80 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AADF45EA29AA465900849A80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AADF45EF29AA46A900849A80 /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AADF45EB29AA466000849A80 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AADF45F129AA46ED00849A80 /* JSONViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AADF45F329AA492600849A80 /* Compositional Groups */ = {
+			isa = PBXGroup;
+			children = (
+				AADF45F429AA493800849A80 /* Layout1.swift */,
+				AADF45F629AA4AF700849A80 /* Layout2.swift */,
+				AADF45F829AA4BB100849A80 /* Layout3.swift */,
+			);
+			path = "Compositional Groups";
+			sourceTree = "<group>";
+		};
+		AADF45FA29AA549B00849A80 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				AADF45FB29AA54AC00849A80 /* ContextModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +146,9 @@
 			dependencies = (
 			);
 			name = "Compositional Layout";
+			packageProductDependencies = (
+				AADF45E729AA465000849A80 /* SDWebImageSwiftUI */,
+			);
 			productName = "Compositional Layout";
 			productReference = AADF45D529AA3FE400849A80 /* Compositional Layout.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +177,9 @@
 				Base,
 			);
 			mainGroup = AADF45CC29AA3FE400849A80;
+			packageReferences = (
+				AADF45E629AA465000849A80 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = AADF45D629AA3FE400849A80 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +206,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AADF45F729AA4AF700849A80 /* Layout2.swift in Sources */,
+				AADF45F929AA4BB100849A80 /* Layout3.swift in Sources */,
 				AADF45DB29AA3FE400849A80 /* ContentView.swift in Sources */,
+				AADF45FC29AA54AC00849A80 /* ContextModifier.swift in Sources */,
+				AADF45F229AA46ED00849A80 /* JSONViewModel.swift in Sources */,
+				AADF45ED29AA466D00849A80 /* Home.swift in Sources */,
+				AADF45F529AA493800849A80 /* Layout1.swift in Sources */,
 				AADF45D929AA3FE400849A80 /* Compositional_LayoutApp.swift in Sources */,
+				AADF45F029AA46A900849A80 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +415,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AADF45E629AA465000849A80 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AADF45E729AA465000849A80 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AADF45E629AA465000849A80 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AADF45CD29AA3FE400849A80 /* Project object */;
 }
